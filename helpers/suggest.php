@@ -34,37 +34,35 @@ if( false != ( $searchWord = filter_var($_GET['term'],FILTER_SANITIZE_STRING) ) 
   }
   $finResult = array();
 
-  if( $medsResult = $db->select('name,synonym ,brand','brands','TRIM(brand) LIKE "'.$searchWord.'%"',null,'brand',0,15) ) {
-
-    if( $db->row_count > 0 ){
-
-      foreach($medsResult as $mItem)
-      {
-        if( false == in_array($mItem['brand'], $finResult))
-          $finResult[] = array('category'=>'Medikamente','label'=>trim($mItem['brand']),'value'=>trim($mItem['brand']));
+  if( !isset( $_GET['only'] ) || $_GET['only'] == 'meds') {
+    if( $medsResult = $db->select('name,synonym ,brand','brands','TRIM(brand) LIKE "'.$searchWord.'%"',null,'brand',0,15) ) {
+      if( $db->row_count > 0 ){
+        foreach($medsResult as $mItem) {
+          if( false == in_array($mItem['brand'], $finResult))
+            $finResult[] = array('category'=>'Medikamente','label'=>trim($mItem['brand']),'value'=>trim($mItem['brand']));
+        }
       }
     }
   }
+  if( !isset( $_GET['only'] ) || $_GET['only'] == 'symptoms') {
+    if( $disResult = $db->select('item_nr, item_name','`ICD10-items`','TRIM(item_name) LIKE "%'.$searchWord.'%"',null,'item_name',0,15) ) {
 
-  if( $disResult = $db->select('item_nr, item_name','`ICD10-items`','TRIM(item_name) LIKE "%'.$searchWord.'%"',null,'item_name',0,15) ) {
+        foreach($disResult as $dItem) {
+          $label =  trim($dItem['item_name']);
 
-      foreach($disResult as $dItem)
-      {
-        $label =  trim($dItem['item_name']);
-
-        if( strlen($label) > 70 ){
-          $pos = stripos($label, $searchWord);
-          if($pos > 15)
-            $label = substr($label,0,10).'...'.substr($label,$pos-15,strlen($searchWord)+35).'...';
-          else
-            $label = substr($label,0,70).'...';
+          if( strlen($label) > 70 ){
+            $pos = stripos($label, $searchWord);
+            if($pos > 15)
+              $label = substr($label,0,10).'...'.substr($label,$pos-15,strlen($searchWord)+35).'...';
+            else
+              $label = substr($label,0,70).'...';
+          }
+          $finResult[] = array('category'=>'Symptome','label'=>trim($label), 'value'=>trim($dItem['item_nr']), 'desc'=>trim($dItem['item_name']) );
         }
 
-        $finResult[] = array('category'=>'Symptome','label'=>trim($label), 'value'=>trim($dItem['item_nr']), 'desc'=>trim($dItem['item_name']) );
-      }
-
-  } else {
-    echo $db->error;
+    } else {
+      echo $db->error;
+    }
   }
 
   echo json_encode($finResult);

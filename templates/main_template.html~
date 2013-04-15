@@ -1,0 +1,99 @@
+<!-- ###MAINTEMPLATE### start -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cz">
+<head>
+<title> ###TITLE### </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="###JSFILE1###" type="text/javascript" ></script>
+<script src="###JSFILE2###" type="text/javascript" ></script>
+
+###CSSSTYLES###
+
+</head>
+<body>
+
+<div id="header">
+<h1>Kartotéka - Nože</h1>
+
+###LOGINFORM###
+
+</div>
+<div id="topnavigation">
+###TOPNAVIGATION###
+</div>
+<div id="navigation">
+###NAVIGATION###
+</div>
+
+<div id="content">
+###CONTENT###
+</div>
+
+<div id="borderContent">
+###BORDER_CONTENT###
+</div>
+</body>
+</html>
+<!-- ###MAINTEMPLATE### end -->
+
+<!-- ###ITEM### -->
+	<div class="item">
+	
+	<h3>###CATEGORY###</h3>
+	<h4>###MANUFACTORY### - ###NAME###</h4>
+	
+	<p>###DESCRIPTION###</p>
+	
+	<table>
+	<tr>
+	<td>Celková délka:</td>
+	<td>###OVERALL-LENGTH###</td>
+	</tr>
+	<tr>
+	<td>Délka čepele:</td>
+	<td>###BLADE-LENGTH###</td>
+	</tr>
+	
+	<tr>
+	<td>Materiály:</td>
+	<td>###BLADE-MATERIAL### / ###HANDLE-MATERIAL### </td>
+	</tr>
+	</table>
+	###EDITLINK###
+
+	<!-- ###MORELINK### -->
+	<a href="###LINK###" >###MORE###</a>
+	<!-- ###MORELINK### -->
+	
+	###ITEMIMAGE###
+	
+	</div>
+<!-- ###ITEM### -->
+
+<!-- ###FULLVIEW### -->
+	<h3>###MANUFACTORY### - ###NAME###</h3>
+	
+	<table class='detailsTable'>
+		<tr><td colspan="2" class='detailGroup'>Všeobecně</td></tr>
+		<tr><td>Celková délka</td><td>###OVERALL-LENGTH###</td></tr>
+		<tr><td>Hmotnost</td><td>###WEIGHT###</td></tr>
+		
+		<tr><td colspan="2" class='detailGroup'>Čepel</td></tr>
+		<tr><td>Délka</td><td>###BLADE-LENGTH###</td></tr>
+		<tr><td>Síla</td><td>###THICKNESS###</td></tr>
+		<tr><td>Tvrdost</td><td>###HARDNESS###</td></tr>
+		<tr><td>Materiál</td><td>###BLADE-MATERIAL###</td></tr>
+		
+		<tr><td colspan="2" class='detailGroup'>Rukojeť</td></tr>	
+		<tr><td>Délka</td><td>###HANDLE-LENGTH###</td></tr>
+		<tr><td>Materiál</td><td>###HANDLE-MATERIAL###</td></tr>
+	</table>
+	
+	###DESCRIPTION###
+	
+	
+	<div id="imageGallery">
+	###IMAGES###
+	</div>
+	<hr class='cleaner' />
+<!-- ###FULLVIEW### -->

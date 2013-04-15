@@ -228,6 +228,39 @@ span.sprite.jpg,
 span.sprite.jpeg{ background-position:-100px 0px; }
 span.sprite.gif{ background-position:-120px 0px; }
 
+.ui-autocomplete {
+	max-width: 100%;
+	max-height: 300px;
+	overflow-y: auto;
+/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+}
+/* ie 6 doesn't support max-height * we use height instead, but this forces the menu to always be this tall */
+* html .ui-autocomplete {
+	height: 100px;
+}
+.ui-helper-hidden-accessible {
+	display: none;
+	position: absolute;
+	top: 0px;
+	font-size: 8pt;
+}
+#ui-id-1 {
+	border: 1px solid #AAA;
+	width: 500px;
+}
+#ui-id-1 .ui-menu-item {
+	border-bottom: 1px solid #DDD;
+	font-size: 10pt;
+	background-color: #FFF;
+}
+.ui-autocomplete-category {
+	text-align: center;
+	font-weight: bold;
+	background-color: #F2940C;
+}
+
+
 /*********************** * *  Footer * **********************/
 #footer {
 	height: 200px;
