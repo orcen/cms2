@@ -1,0 +1,90 @@
+ICD-10-GM, Systematisches Verzeichnis
+Internationale statistische Klassifikation der Krankheiten und verwandter Gesundheitsprobleme, 10. Revision
+- German Modification -
+
+Herausgegeben vom Deutschen Institut für Medizinische Dokumentation und Information (DIMDI)
+im Auftrag des Bundesministeriums für Gesundheit (BMG)
+unter Beteiligung der Arbeitsgruppe ICD des Kuratoriums für Fragen der Klassifikation im Gesundheitswesen (KKG)
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+LIESMICHDATEI 
+
+ICD-10-GM Version 2012 (OID 1.2.276.0.76.5.409)
+Systematisches Verzeichnis EDV-Fassung ASCII
+
+Herausgabe der Klassifikation:	 	 23.09.2011
+
+
+Das Herausgabedatum entspricht dem Stand der Klassifikationsdateien bei der Erstveröffentlichung einer neuen Jahresversion. 
+Werden die Dateien nach der Erstveröffentlichung unterjährig aufgrund von Fehlerkorrekturen oder nachträglichen Ergänzungen geändert und neu publiziert, wird zusätzlich das Aktualisierungsdatum angegeben.
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+INHALT DES ZIP-FILES  x1gea2012.zip:
+
+  - icd10gm2012syst_edv_ascii_liesmich.txt
+	
+  - Ordner VERTRAGSBEDINGUNGEN 
+	Wichtige Hinweise zu Kauf und Download von Dateien
+	Downloadbedingungen
+	AGB des DIMDI Webshop 
+	Impressum
+
+  - Ordner KLASSIFIKATIONSDATEIEN
+	icd10gm2012syst_edv_ascii_20110923.txt
+	KAP07TAB.txt	
+
+
+  - Ordner ZUSATZDATEIEN 	
+	icd10gmsyst_01_titelblatt.odt
+	icd10gmsyst_02_inhaltsverzeichnis.odt
+	icd10gmsyst_03_anleitung_zur_verschlüsselung.odt
+	icd10gmsyst_04_kommentar.odt
+	icd10gmsyst_05_morphologie_neubildungen.odt
+	icd10gmsyst_06_barthelindex.odt
+	icd10gmsyst_07_erwbarthelindex.odt
+	icd10gmsyst_08_frb_schoenle.odt
+	icd10gmsyst_09_fim.odt
+	icd10gmsyst_10_mmse.odt
+	
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+DATENSATZBESCHREIBUNG
+
+Zeichenvorrat        : UTF-8
+
+Spaltenstruktur      :
+Spalte 1             : hierarchische Ebene der Klassifikation
+                       0 = Kapitel
+                       1 = Gruppe
+                       2 = Untergruppe Ebene 1
+                       3 = Untergruppe Ebene 2
+                       4 = Dreisteller
+                       5 = Viersteller
+                       6 = Fünfsteller
+                       
+                       X = Beginn einer Subklassifikation
+                       V = vierte Stelle in einer Subklassifikation
+                       F = fünfte Stelle in einer Subklassifikation
+                       L = Leerzeile aus optischen Gründen
+                       P = neuer Absatz
+
+Spalte 2             : logisches Element der Klassifikation
+                       * = Übersicht der Sternschlüsselnummern eines Kapitels
+                       G = Gliederung eines Kapitels in Gruppen
+                       B = Benutze-Hinweise für zusätzliche Schlüsselnummern
+                       E = Exklusiva
+                       H = Hinweistext
+                       I = Inklusiva
+                       R = erklärender Text
+                       S = Siehe-Verweis auf Subklassifikation
+                       T = Basisinformation (Klassentitel, ggf. Schlüsselnummer)
+                       Z = Leerzeile aus optischen Gründen
+
+Spalte 3             : aus optischen Gründen leer
+
+Spalte 4             : hier beginnt der eigentliche Text der ICD-10
+
+
+Längere Fließtexte sind durch Leerzeilen gegliedert; diese sind nicht eigens durch "LZ" in Spalte 1 gekennzeichnet. Diese Kennzeichnung tritt im Wesentlichen innerhalb der eigentlichen Systematiken auf.
+----------------------------------------------------------------
+

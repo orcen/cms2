@@ -1,0 +1,235 @@
+body {
+	font: normal normal normal 10pt/1.5 Verdana;
+	border-top: 20px solid #F2940C;
+}
+a {
+	text-decoration: none;
+}
+strong {
+	font-weight: bold;
+}
+small {
+	font-size: 8pt;
+	color: #888;
+}
+#langNav {
+	position: relative;
+	top: -20px;
+	padding: 0px 25px;
+	text-align: right;
+}
+.header {
+	width: 1000px;
+	max-width: 100%;
+	margin: 5px auto;
+	height: 180px;
+	text-align: center;
+	border-bottom: 2px solid #F2940C;
+}
+.header h1 {
+	font-size: 24pt;
+	height: 150px;
+	margin-top: 25px;
+	text-indent: -99999px;
+	background: url(./img/logo.jpg) no-repeat 50% 50%;
+}
+.header>div {
+	width: 550px;
+	max-width: 70%;
+	min-width: 300px;
+	padding: 3px 3px;
+	height: 24px;
+	margin: 0px auto;
+	position: relative;
+	bottom: -15px;
+	background-color: #000;
+	color: #FFF;
+	line-height: 24px;
+	font-size: 13pt;
+	font-weight: bold;
+}
+.header>div a {
+	position: absolute;
+	right: 2px;
+	top: 4px;
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: 20px;
+	color: #FFF;
+	border-left: 1px solid #FFF;
+	padding: 0px 5px;
+}
+.header>div a:hover {
+	color: #F2940C;
+}
+.content {
+	width: 1000px;
+	max-width: 100%;
+	min-height: 400px;
+	margin: 100px auto 20px;
+	background: url(./img/bg_content.jpg) no-repeat right 50px;
+}
+.content ul.list {
+	width: 55%;
+	margin-left: 15px;
+	margin-bottom: 25px;
+	list-style: circle outside url();
+}
+.content ul.list li a{ float:right; color:#000;}
+
+a.button {display: inline-block;width: 280px;height: 30px;line-height:30px;padding-left:20px;margin-bottom: 10px;background-color: #F2940C;color: #FFF;}
+a.button.next { float: right;}
+a.button i{ margin:0px 5px;}
+
+.content form {
+	padding: 0;
+	width: 55%;
+	margin: 10px auto;
+  padding-right: 15px;;
+}
+.content form label {
+	display: block;
+}
+.content form input {
+	width: 100%;
+	margin: 5px auto;
+	padding: 3px 0px;
+	border: 1px solid #F2940C;
+}
+.content form button {
+	width: 250px;
+	line-height: 26px;
+	display: block;
+	margin: 15px auto;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #000;
+	border: none;
+	border: 2px solid #000;
+}
+.content form button:hover {
+	border: 2px solid #F2940C;
+	color: #F2940C;
+}
+.content #additionalInfo {
+	text-align: left;
+	margin: 45px 0px 15px;
+	padding-top: 10px;
+	border-top: 2px solid #F2940C;
+}
+.content code {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', Gadget, sans-serif;
+	font-family: Arial, sans-serif;
+	white-space: nowrap;
+	font-weight: 100;
+	font-size: 13px;
+	letter-spacing: 2px;
+	margin: 5px;
+}
+#additionalInfo legend {
+	font-weight: bold;
+	margin: 5px 10px;
+}
+#additionalInfo label {
+	margin: 0px 0px 5px;
+}
+#additionalInfo label span {
+	width: 125px;
+	display: inline-block;
+}
+#additionalInfo label select {
+	width: 85px;
+}
+.content h1.overview-heading {
+	font-size: 16pt;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 25px;
+}
+.content h2 {
+	width: 55%;
+	font-size: 12pt;
+	font-weight: bold;
+	border-bottom: 1px dotted #F2940C;
+	margin-top: 15px;
+  padding-right:15px;
+}
+#searchList {
+	display: inline-block;
+	width: 550px;
+	min-height: 50px;
+	padding: 0px;
+	vertical-align: middle;
+}
+#searchList li {
+	border: 1px solid #DDD;
+	background-color: #F2940C;
+	padding: 1px 5px;
+	margin: 2px 0px;
+	font-size: 9pt;
+	display: block;
+}
+#searchList li .remove{ float:right; color:#FFF; cursor:pointer; border:none; padding:0; display:inline-block; width:18px; height:18px; background-color:#F00;}
+
+.ui-autocomplete {
+	max-width: 100%;
+	max-height: 300px;
+	overflow-y: auto;
+/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+}
+/* ie 6 doesn't support max-height * we use height instead, but this forces the menu to always be this tall */
+* html .ui-autocomplete {
+	height: 100px;
+}
+.ui-helper-hidden-accessible {
+	display: none;
+	position: absolute;
+	top: 0px;
+	font-size: 8pt;
+}
+#ui-id-1 {
+	border: 1px solid #AAA;
+	width: 500px;
+}
+#ui-id-1 .ui-menu-item {
+	border-bottom: 1px solid #DDD;
+	font-size: 10pt;
+	background-color: #FFF;
+}
+.ui-autocomplete-category {
+	text-align: center;
+	font-weight: bold;
+	background-color: #F2940C;
+}
+/*********************** * *  Footer * **********************/
+#footer {
+	height: 200px;
+	background-color: #F2940C;
+}
+.clearer {
+	clear: both;
+}
+/* * * * * * * * * * * * * ** * *    Media Queries* * * * * * * * * * * * * * * */
+@media all and (max-width:650px) {
+.header {
+	width: 100%;
+	height: 125px;
+}
+.header h1 {
+	background: none;
+	text-indent: 0;
+	height: 95px;
+}
+.header>div {
+	max-width: 80%;
+}
+.content {
+	width: 80%;
+	background-position: right bottom;
+}
+#searchList {
+	width: 95%;
+}
+}

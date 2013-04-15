@@ -1,0 +1,3 @@
+datagroups = Datengruppen
+datagroups_description = Datengruppen die von anderem Modulen genutzt werden.
+new_group = Neue Gruppe

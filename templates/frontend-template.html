@@ -1,0 +1,102 @@
+<!-- ###MAINTEMPLATE### start -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="###LANG###" lang="###LANG###">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title> ###TITLE### </title>
+  <meta lang="###LANG###" name="copyright" content="BioVariance" />
+  <meta lang="###LANG###" name="keywords" content="Bio, Variance, Analytics" />
+  <meta lang="###LANG###" name="description" content="Unser Angebot beruht auf dem Wissen, das tausende Wissenschaftler und Ärzte über viele Jahre zusammengetragen haben. Wir bereiten dieses Wissen auf und bieten es in einer gut nutzbaren Form an." />
+
+  <meta name="robots" content="index,nofollow" />
+
+  <script src="###JSFILE1###" type="text/javascript" ></script>
+  <script src="###JSFILE2###" type="text/javascript" ></script>
+
+  ###CSSSTYLES###
+</head>
+<body>
+<div id='langNav'>###LANGNAVIGATION###</div>
+<div class="header">
+<h1>###TITLE###</h1>
+<div> ANALYTICS <a href='?page=help'>? Help</a></div>
+###LOGINFORM###</div>
+
+<div class="content">
+###CONTENT###
+<div class='clearer'></div>
+</div>
+
+<div id='footer'>
+  ###FOOTER###
+</div>
+
+<script charset="utf-8" type="text/javascript">
+  //<![CDATA[
+  $.widget( "custom.catcomplete", $.ui.autocomplete, {
+        _renderMenu: function( ul, items ) {
+            var that = this,
+                currentCategory = "";
+            $.each( items, function( index, item ) {
+                if ( item.category != currentCategory ) {
+                    ul.append( "<li class='ui-autocomplete-category'>" + item.category + "</li>" );
+                    currentCategory = item.category;
+                }
+                that._renderItemData( ul, item );
+            });
+        }
+    });
+
+  function suggestValues() {
+    $("#searchField")
+    .bind( "keydown", function( event ) {
+      if ( event.keyCode === $.ui.keyCode.TAB &&
+      $( this ).data( "catcomplete" ).menu.active ) {
+        event.preventDefault();
+      }
+    })
+    .catcomplete({
+      source: './helpers/suggest.php',
+      minLength: 2,
+      delay: 0,
+      appendTo:'#searchForm',
+      focus: function(event, ui){
+        $("#searchField").val(ui.item.label);
+        return false;
+      },
+      select: function(event, ui){
+        $("#searchField").val('');
+
+        var item = ui.item;
+        if( item.category == 'Medikamente' ){
+          var show = $('<li class="med" data-value="'+item.value+'">'+item.label+'<a class="icon-remove remove" ></a><input type="hidden" name="meds[]" value="'+item.value+'" /></li>');
+        } else {
+          var show = $('<li class="sympt" data-value="'+item.value+'">'+item.label+'<a class="icon-remove remove"></a><input type="hidden" name="symptoms[]" value="'+item.value+'" /></li>');
+        }
+        show.find('.remove').click(function () {
+          $(this).parent().remove();
+        });
+        //$('#searchList').append(field);
+        $('#searchList').append(show);
+
+
+
+        return false;
+      },
+
+    }).attr('value','');
+  }
+
+  $(document).ready(function(){
+    //$('body').css('min-height',($(window).height()-110)+'px');
+    suggestValues();
+
+  });
+
+  //]]>
+  </script>
+</body>
+
+</html>
+<!-- ###MAINTEMPLATE### end -->

@@ -1,0 +1,49 @@
+<!-- ###OVERVIEW### start -->
+  ###BUTTON_NEXT###  ###BUTTON_BACK###
+  ###BUTTON_RESET###
+
+  <div class='tab'>
+    ###LIST_MEDS###
+
+    ###LIST_SYMPTOMS###
+  </div>
+
+  <div class='tab'>
+    ###INFO_ADDITIONAL###
+  </div>
+
+  <div class='tab'>
+    ###FORM_ADDITIONAL###
+  </div>
+
+  ###BUTTON_NEXT###
+<!-- ###OVERVIEW### end -->
+
+<!-- ###RESULT### start -->
+
+###TABS###
+
+###DIAGRAM###
+
+<!-- ###RESULT### end -->
+
+<!-- ###INPUTFORM### start -->
+
+  <form accept="text/html" accept-charset="utf-8" action="index.php" enctype="multipart/formdata" method="post" id="searchForm" xml:lang="de">
+  <fieldset>
+    <label for='searchField'> {L:analyse:main_label}</label>
+    <input type="text" name="search" id='searchField' size='90' value='' />
+    <small>{L:analyse:main_label_info}</small>
+  </fieldset>
+  <ul id='searchList'>
+  </ul>
+  <fieldset>
+  <button type='submit' name='send_data'>
+    ###SUBMIT_BUTTON###
+  </button>
+  </fieldset>
+  </form>
+
+  ###OVERVIEW_LINK###
+
+<!-- ###INPUTFORM### end -->

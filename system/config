@@ -1,0 +1,81 @@
+#
+# BioVariance Config File
+# @2012
+#
+
+# Database Settings
+db_server = rdbms.strato.de
+db_port = 3306
+db_user = U1160814
+db_password = BioVariance2O12
+db_database = DB1160814
+db_type = mysql		# allowed types mysql, postgresql, mssql
+db_encoding = utf8
+
+
+# Database ReadOnly Settings
+#dbro_server = unipushmediagmbh.de
+#dbro_port = 3308
+#dbro_user = redsys
+#dbro_password = desnet33pk
+#dbro_database = nplive1
+#dbro_type = mysql		# allowed types mysql, postgresql, mssql
+#dbro_encoding = latin1
+
+# System settings
+system_title = BioVariance
+system_encoding = utf-8
+path_base = /home/strato/http/premium/rid/94/00/53179400/htdocs/analyse/
+path_system = path_base + system/
+path_modules = path_base + modules/
+path_helpers = path_base + helpers/
+path_logs = path_base + logs/
+path_uploads = path_base + uploads/
+path_images = path_base + uploads/images/
+path_templates = path_base + templates/
+path_syslang = path_base + lang/
+path_pages = path_base + pages/
+domain = http://www.biovariance.de/analyse/
+
+interface = WebFrontend
+interface_version = 1.0
+
+date_format = d.m.Y
+time_format = H:i:s
+datetime_format = d.m.Y H:i
+
+show_per_page = 20
+
+languages = de|cz|en
+default_language = de
+
+#Debugging
+debug = false	# true|false
+
+# Email Settings
+#admin_email = orcener@gmail.com
+#system_email = system@news-push.com
+#smtp_server = localhost
+#smtp_authentication = FALSE
+#smtp_user =
+#smtp_password =
+
+# FTP Access to Unipushmedia system for IPhone
+
+#ftp_server = 80.250.8.122
+#ftp_user = jbenes
+#ftp_password = design
+#ftp_dir = test_np/
+
+# File Settings
+file_encoding = utf8
+max_file_upload_size = 32	# MB
+allowed_file_extensions = xml|cvs|xls	# Array separated by "|"
+max_image_size = 1024x768 # width x height
+allowed_image_types = jpg|jpeg|png
+upload_dir = /www-mysql/dev/htdocs/honza/newspush/uploads/
+
+
+
+# R-Project
+rProjectServerURL = http://www.domain.net/

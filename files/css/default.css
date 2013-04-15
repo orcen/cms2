@@ -1,0 +1,92 @@
+body{
+  font: normal normal normal 11pt/1.5 Verdana;
+  border-top:20px solid #F2940C;
+  height:300%;
+}
+.header{
+  height:75px;
+  text-align:center;
+  border-bottom:1px solid black;
+}
+.header h1{
+  font-size:24pt;
+  text-indent:-99999px;
+  background:url(./img/logo.jpg) no-repeat 50% 50%;
+}
+
+.content{
+  width:1000px;
+  height:600px;
+  margin:10px auto;
+}
+
+.content form{
+padding:0;
+width:550px;
+margin:10px auto;
+}
+.content form label{
+display:block;
+}
+.content form input{
+ width:100%;
+ margin:5px auto;
+}
+
+.content form button{
+  width:250px;
+  line-height:30px;
+  margin:15px 150px;
+  font-size:12pt;
+  font-weight:bold;
+  color:#FFF;
+  background-color:#000;
+  border:none;
+}
+#searchList{
+  display:inline-block;
+  width:550px;
+  min-height:50px;
+  padding:0px;
+  vertical-align:middle;
+}
+#searchList span{
+  border:1px solid #DDD;
+  background-color:#F2940C;
+  padding:1px;
+  margin:2px 2px;
+  font-size:9pt;
+  display:block;
+}
+.ui-helper-hidden-accessible{
+  display:none;
+  position:absolute;
+  top:0px;
+  font-size:8pt;
+}
+#ui-id-1{
+  border:1px solid #AAA;
+  width: 500px;
+}
+#ui-id-1 .ui-menu-item{
+  border-bottom:1px solid #DDD;
+  font-size:10pt;
+  background-color:#FFF;
+}
+.ui-autocomplete-category{
+  text-align:center;
+  font-weight:bold;
+  background-color:#F2940C;
+}
+
+
+/***********************
+ *
+ *  Footer
+ *
+ **********************/
+
+#footer{
+  height:200px;
+  background-color:#F2940C;
+}

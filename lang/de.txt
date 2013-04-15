@@ -1,0 +1,37 @@
+## System
+import = Import
+analyse_overview = Analyse Übersicht
+datasheet = Daten Übersicht
+entries_count = Einträge Gesamt
+actions = Aktionen
+
+## Import module
+import_module = Import Modul
+
+## Datasheets Texts
+brands = Medikamente
+symptoms = Symptome
+capitel = Kapitel
+page_count = Seiten Anzahl
+
+## User texts
+login_form = Anmelde Formular
+username = Benutzername
+password = Passwort
+login = Anmelden
+logout = Abmelden
+wrong_password = Sie haben einen falschen Benutzernamen oder Passwort angegeben!
+
+last_login = Angemeldet seid:
+
+## Filemanager
+file_icon = Icone
+filename = Dateiname
+filetype = Typ
+file_size = Grösse
+mime_type = MIME
+
+
+file_open = Öffnen
+file_edit = Bearbeiten
+file_remove = Löschen

@@ -1,0 +1,615 @@
+0T Kapitel I
+0T Bestimmte infektiöse und parasitäre Krankheiten
+0T (A00-B99)
+LZ
+0I Inkl.:   Krankheiten, die allgemein als ansteckend oder übertragbar anerkannt
+              sind
+0E Exkl.:   Keimträger oder -ausscheider, einschließlich Verdachtsfällen (Z22.-)
+0E          Bestimmte lokalisierte Infektionen - siehe im entsprechenden Kapitel
+              des jeweiligen Körpersystems
+0E          Infektiöse und parasitäre Krankheiten, die Schwangerschaft, Geburt
+              und Wochenbett komplizieren [ausgenommen Tetanus in diesem
+              Zeitabschnitt] (O98.-)
+0E          Infektiöse und parasitäre Krankheiten, die spezifisch für die
+              Perinatalperiode sind [ausgenommen Tetanus neonatorum, Syphilis
+              connata, perinatale Gonokokkeninfektion und perinatale
+              HIV-Krankheit] (P35-P39)
+0E          Grippe und sonstige akute Infektionen der Atemwege (J00-J22)
+LZ
+0G Dieses Kapitel gliedert sich in folgende Gruppen:
+0G A00-A09  Infektiöse Darmkrankheiten
+0G A15-A19  Tuberkulose
+0G A20-A28  Bestimmte bakterielle Zoonosen
+0G A30-A49  Sonstige bakterielle Krankheiten
+0G A50-A64  Infektionen, die vorwiegend durch Geschlechtsverkehr übertragen
+            werden
+0G A65-A69  Sonstige Spirochätenkrankheiten
+0G A70-A74  Sonstige Krankheiten durch Chlamydien
+0G A75-A79  Rickettsiosen
+0G A80-A89  Virusinfektionen des Zentralnervensystems
+0G A90-A99  Durch Arthropoden übertragene Viruskrankheiten und virale
+            hämorrhagische Fieber
+0G B00-B09  Virusinfektionen, die durch Haut- und Schleimhautläsionen
+            gekennzeichnet sind
+0G B15-B19  Virushepatitis
+0G B20-B24  HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]
+0G B25-B34  Sonstige Viruskrankheiten
+0G B35-B49  Mykosen
+0G B50-B64  Protozoenkrankheiten
+0G B65-B83  Helminthosen
+0G B85-B89  Pedikulose [Läusebefall], Akarinose [Milbenbefall] und sonstiger
+            Parasitenbefall der Haut
+0G B90-B94  Folgezustände von infektiösen und parasitären Krankheiten
+0G B95-B98  Bakterien, Viren und sonstige Infektionserreger als Ursache von
+            Krankheiten, die in anderen Kapiteln klassifiziert sind
+0G B99-B99  Sonstige Infektionskrankheiten
+LZ
+0! Dieses Kapitel enthält die folgenden Ausrufezeichenschlüsselnummern:
+0! B95!     Streptokokken und Staphylokokken als Ursache von Krankheiten, die in
+            anderen Kapiteln klassifiziert sind
+0! B96!     Sonstige näher bezeichnete Bakterien als Ursache von Krankheiten,
+            die in anderen Kapiteln klassifiziert sind
+0! B97!     Viren als Ursache von Krankheiten, die in anderen Kapiteln
+            klassifiziert sind
+0! B98!     Sonstige näher bezeichnete infektiöse Erreger als Ursache von
+            Krankheiten, die in anderen Kapiteln klassifiziert sind
+LZ
+1T Infektiöse Darmkrankheiten
+1T (A00-A09)
+LZ
+4T A00.-    Cholera
+LZ
+5T A00.0    Cholera durch Vibrio cholerae O:1, Biovar cholerae
+5I          Klassische Cholera
+LZ
+5T A00.1    Cholera durch Vibrio cholerae O:1, Biovar eltor
+5I          El-Tor-Cholera
+LZ
+5T A00.9    Cholera, nicht näher bezeichnet
+LZ
+4T A01.-    Typhus abdominalis und Paratyphus
+LZ
+5T A01.0    Typhus abdominalis
+5I          Infektion durch Salmonella typhi
+5I          Typhoides Fieber
+LZ
+5T A01.1    Paratyphus A
+LZ
+5T A01.2    Paratyphus B
+LZ
+5T A01.3    Paratyphus C
+LZ
+5T A01.4    Paratyphus, nicht näher bezeichnet
+5I          Infektion durch Salmonella paratyphi o.n.A.
+LZ
+4T A02.-    Sonstige Salmonelleninfektionen
+4I          Inkl.:   Infektion oder Lebensmittelvergiftung durch Salmonellen
+                       außer durch Salmonella typhi und Salmonella paratyphi
+LZ
+5T A02.0    Salmonellenenteritis
+5I          Enteritis infectiosa durch Salmonellen
+LZ
+5T A02.1    Salmonellensepsis
+LZ
+5T A02.2    Lokalisierte Salmonelleninfektionen
+5I          Arthritis† (M01.3-*)                           } durch Salmonellen
+5I          Meningitis† (G01*)                             }
+5I          Osteomyelitis† (M90.2-*)                       }
+5I          Pneumonie† (J17.0*)                            }
+5I          Tubulointerstitielle Nierenkrankheit† (N16.0*) }
+LZ
+5T A02.8    Sonstige näher bezeichnete Salmonelleninfektionen
+LZ
+5T A02.9    Salmonelleninfektion, nicht näher bezeichnet
+LZ
+4T A03.-    Shigellose [Bakterielle Ruhr]
+LZ
+5T A03.0    Shigellose durch Shigella dysenteriae
+5I          Shigellose durch Shigellen der Gruppe A [Shiga-Kruse-Ruhr]
+LZ
+5T A03.1    Shigellose durch Shigella flexneri
+5I          Shigellose durch Shigellen der Gruppe B
+LZ
+5T A03.2    Shigellose durch Shigella boydii
+5I          Shigellose durch Shigellen der Gruppe C
+LZ
+5T A03.3    Shigellose durch Shigella sonnei
+5I          Shigellose durch Shigellen der Gruppe D
+LZ
+5T A03.8    Sonstige Shigellosen
+LZ
+5T A03.9    Shigellose, nicht näher bezeichnet
+5I          Bakterielle Ruhr [Bakterielle Dysenterie] o.n.A.
+LZ
+4T A04.-    Sonstige bakterielle Darminfektionen
+4E          Exkl.:   Lebensmittelvergiftungen, anderenorts klassifiziert (A05.-)
+4E                   Tuberkulöse Enteritis (A18.3)
+LZ
+5T A04.0    Darminfektion durch enteropathogene Escherichia coli
+LZ
+5T A04.1    Darminfektion durch enterotoxinbildende Escherichia coli
+LZ
+5T A04.2    Darminfektion durch enteroinvasive Escherichia coli
+LZ
+5T A04.3    Darminfektion durch enterohämorrhagische Escherichia coli
+LZ
+5T A04.4    Sonstige Darminfektionen durch Escherichia coli
+5I          Enteritis durch Escherichia coli o.n.A.
+LZ
+5T A04.5    Enteritis durch Campylobacter
+LZ
+5T A04.6    Enteritis durch Yersinia enterocolitica
+5E          Exkl.:   Extraintestinale Yersiniose (A28.2)
+LZ
+5T A04.7    Enterokolitis durch Clostridium difficile
+5I          Lebensmittelvergiftung durch Clostridium difficile
+5I          Pseudomembranöse Kolitis
+LZ
+5T A04.8    Sonstige näher bezeichnete bakterielle Darminfektionen
+LZ
+5T A04.9    Bakterielle Darminfektion, nicht näher bezeichnet
+5I          Bakterielle Enteritis o.n.A.
+LZ
+4T A05.-    Sonstige bakteriell bedingte Lebensmittelvergiftungen, anderenorts
+            nicht klassifiziert
+4E          Exkl.:   Infektion durch Escherichia coli (A04.0-A04.4)
+4E                   Infektion oder Lebensmittelvergiftung durch Clostridium
+                       difficile (A04.7)
+4E                   Infektion oder Lebensmittelvergiftung durch Salmonellen
+                       (A02.-)
+4E                   Listeriose (A32.-)
+4E                   Toxische Wirkung schädlicher (verdorbener) Lebensmittel
+                       (T61-T62)
+LZ
+5T A05.0    Lebensmittelvergiftung durch Staphylokokken
+LZ
+5T A05.1    Botulismus
+5I          Klassische Lebensmittelvergiftung durch Clostridium botulinum
+LZ
+5T A05.2    Lebensmittelvergiftung durch Clostridium perfringens [Clostridium
+            welchii]
+5I          Enteritis necroticans
+LZ
+5T A05.3    Lebensmittelvergiftung durch Vibrio parahaemolyticus
+LZ
+5T A05.4    Lebensmittelvergiftung durch Bacillus cereus
+LZ
+5T A05.8    Sonstige näher bezeichnete bakteriell bedingte
+            Lebensmittelvergiftungen
+LZ
+5T A05.9    Bakteriell bedingte Lebensmittelvergiftung, nicht näher bezeichnet
+LZ
+4T A06.-    Amöbiasis
+4I          Inkl.:   Infektion durch Entamoeba histolytica
+4E          Exkl.:   Sonstige Darmkrankheiten durch Protozoen (A07.-)
+LZ
+5T A06.0    Akute Amöbenruhr
+5I          Akute Amöbiasis
+5I          Amöbenkolitis o.n.A.
+LZ
+5T A06.1    Chronische intestinale Amöbiasis
+LZ
+5T A06.2    Nichtdysenterische Kolitis durch Amöben
+LZ
+5T A06.3    Amöbom des Darmes
+5I          Amöbom o.n.A.
+LZ
+5T A06.4    Leberabszess durch Amöben
+5I          Amöbenhepatitis
+LZ
+5T A06.5†   Lungenabszess durch Amöben (J99.8*)
+5I          Abszess der Lunge (und der Leber) durch Amöben
+LZ
+5T A06.6†   Hirnabszess durch Amöben (G07*)
+5I          Abszess des Gehirns (und der Leber) (und der Lunge) durch Amöben
+LZ
+5T A06.7    Amöbiasis der Haut
+LZ
+5T A06.8    Amöbeninfektion an sonstigen Lokalisationen
+5I          Appendizitis        } durch Amöben
+5I          Balanitis† (N51.2*) }
+LZ
+5T A06.9    Amöbiasis, nicht näher bezeichnet
+LZ
+4T A07.-    Sonstige Darmkrankheiten durch Protozoen
+LZ
+5T A07.0    Balantidiose
+5I          Balantidienruhr
+LZ
+5T A07.1    Giardiasis [Lambliasis]
+LZ
+5T A07.2    Kryptosporidiose
+LZ
+5T A07.3    Isosporose
+5I          Infektion durch Isospora belli und Isospora hominis
+5I          Intestinale Kokzidiose
+5I          Isosporiasis
+LZ
+5T A07.8    Sonstige näher bezeichnete Darmkrankheiten durch Protozoen
+5I          Intestinale Trichomoniasis
+5I          Sarkosporidiose
+5I          Sarkozystose
+LZ
+5T A07.9    Darmkrankheit durch Protozoen, nicht näher bezeichnet
+5I          Diarrhoe   } durch Protozoen
+5I          Dysenterie }
+5I          Kolitis    }
+5I          Flagellatendiarrhoe
+LZ
+4T A08.-    Virusbedingte und sonstige näher bezeichnete Darminfektionen
+4E          Exkl.:   Grippe mit Beteiligung des Gastrointestinaltraktes (J09,
+                       J10.8, J11.8)
+LZ
+5T A08.0    Enteritis durch Rotaviren
+LZ
+5T A08.1    Akute Gastroenteritis durch Norovirus [Norwalk-Virus]
+LZ
+5T A08.2    Enteritis durch Adenoviren
+LZ
+5T A08.3    Enteritis durch sonstige Viren
+LZ
+5T A08.4    Virusbedingte Darminfektion, nicht näher bezeichnet
+5I          Enteritis o.n.A.       } durch Viren
+5I          Gastroenteritis o.n.A. }
+LZ
+5T A08.5    Sonstige näher bezeichnete Darminfektionen
+LZ
+4T A09.-    Sonstige und nicht näher bezeichnete Gastroenteritis und Kolitis
+            infektiösen und nicht näher bezeichneten Ursprungs
+4E          Exkl.:   Durch Bakterien, Protozoen, Viren und sonstige näher
+                       bezeichnete Infektionserreger (A00-A08)
+4E                   Nichtinfektiöse Diarrhoe (K52.9)
+4E                   Nichtinfektiöse Diarrhoe beim Neugeborenen (P78.3)
+LZ
+5T A09.0    Sonstige und nicht näher bezeichnete Gastroenteritis und Kolitis
+            infektiösen Ursprungs
+5H          Hinweis: Diese Kategorie ist auch bei sonstiger und nicht näher
+                       bezeichneter Gastroenteritis und Kolitis vermutlich
+                       infektiösen Ursprungs zu verwenden.
+5I          Darmkatarrh
+5I          Diarrhoe [Durchfall]:
+5I          . akut blutig
+5I          . akut hämorrhagisch
+5I          . akut wässrig
+5I          . dysenterisch
+5I          . epidemisch
+5I          Infektiös oder septisch: } hämorrhagisch
+5I          . Enteritis              } o.n.A.
+5I          . Gastroenteritis        }
+5I          . Kolitis                }
+5I          Infektiöse Diarrhoe o.n.A.
+LZ
+5T A09.9    Sonstige und nicht näher bezeichnete Gastroenteritis und Kolitis
+            nicht näher bezeichneten Ursprungs
+LZ
+1T Tuberkulose
+1T (A15-A19)
+1I Inkl.:   Infektionen durch Mycobacterium tuberculosis und Mycobacterium bovis
+1E Exkl.:   Angeborene Tuberkulose (P37.0)
+1E          Folgezustände der Tuberkulose (B90.-)
+1E          Pneumokoniose in Verbindung mit Tuberkulose (J65)
+1E          Silikotuberkulose (J65)
+LZ
+4T A15.-    Tuberkulose der Atmungsorgane, bakteriologisch, molekularbiologisch
+            oder histologisch gesichert
+LZ
+5T A15.0    Lungentuberkulose, durch mikroskopische Untersuchung des Sputums
+            gesichert, mit oder ohne Nachweis durch Kultur oder
+            molekularbiologische Verfahren
+5I          Tuberkulös:         } durch mikroskopische Untersuchung des Sputums
+5I          . Bronchiektasie    }   gesichert, mit oder ohne Nachweis durch
+5I          . Fibrose der Lunge }   Kultur oder molekularbiologische Verfahren
+5I          . Pneumonie         }
+5I          . Pneumothorax      }
+LZ
+5T A15.1    Lungentuberkulose, nur durch Kultur gesichert
+5I          Unter A15.0 aufgeführte Zustände, nur durch Kultur gesichert
+LZ
+5T A15.2    Lungentuberkulose, histologisch gesichert
+5I          Unter A15.0 aufgeführte Zustände, histologisch gesichert
+LZ
+5T A15.3    Lungentuberkulose, durch sonstige und nicht näher bezeichnete
+            Untersuchungsverfahren gesichert
+5I          Unter A15.0 aufgeführte Zustände, die gesichert sind, bei denen
+              jedoch keine Angabe darüber vorliegt, mit welchem Verfahren sie
+              gesichert wurden
+5I          Unter A15.0 aufgeführte Zustände, molekularbiologisch gesichert
+LZ
+5T A15.4    Tuberkulose der intrathorakalen Lymphknoten, bakteriologisch,
+            molekularbiologisch oder histologisch gesichert
+5I          Lymphknotentuberkulose: } bakteriologisch, molekularbiologisch oder
+5I          . hilär                 }   histologisch gesichert
+5I          . mediastinal           }
+5I          . tracheobronchial      }
+5E          Exkl.:   Als primär bezeichnet (A15.7)
+LZ
+5T A15.5    Tuberkulose des Larynx, der Trachea und der Bronchien,
+            bakteriologisch, molekularbiologisch oder histologisch gesichert
+5I          Tuberkulose: } bakteriologisch, molekularbiologisch oder
+5I          . Bronchien  }   histologisch gesichert
+5I          . Glottis    }
+5I          . Larynx     }
+5I          . Trachea    }
+LZ
+5T A15.6    Tuberkulöse Pleuritis, bakteriologisch, molekularbiologisch oder
+            histologisch gesichert
+5I          Tuberkulöses Empyem    } bakteriologisch, molekularbiologisch oder
+5I          Tuberkulose der Pleura }   histologisch gesichert
+5E          Exkl.:   Bei primärer Tuberkulose der Atmungsorgane,
+                       bakteriologisch, molekularbiologisch oder histologisch
+                       gesichert (A15.7)
+LZ
+5T A15.7    Primäre Tuberkulose der Atmungsorgane, bakteriologisch,
+            molekularbiologisch oder histologisch gesichert
+LZ
+5T A15.8    Sonstige Tuberkulose der Atmungsorgane, bakteriologisch,
+            molekularbiologisch oder histologisch gesichert
+5I          Tuberkulose:             } bakteriologisch, molekularbiologisch
+5I          . Mediastinum            }   oder histologisch gesichert
+5I          . Nase                   }
+5I          . Nasennebenhöhle [jede] }
+5I          . Nasopharynx            }
+LZ
+5T A15.9    Nicht näher bezeichnete Tuberkulose der Atmungsorgane,
+            bakteriologisch, molekularbiologisch oder histologisch gesichert
+LZ
+4T A16.-    Tuberkulose der Atmungsorgane, weder bakteriologisch,
+            molekularbiologisch noch histologisch gesichert
+LZ
+5T A16.0    Lungentuberkulose, weder bakteriologisch, molekularbiologisch noch
+            histologisch gesichert
+5I          Tuberkulös:         } weder bakteriologisch, molekularbiologisch
+5I          . Bronchiektasie    }   noch histologisch gesichert
+5I          . Fibrose der Lunge }
+5I          . Pneumonie         }
+5I          . Pneumothorax      }
+LZ
+5T A16.1    Lungentuberkulose, bakteriologische, molekularbiologische und
+            histologische Untersuchung nicht durchgeführt
+5I          Unter A16.0 aufgeführte Zustände, bakteriologische,
+              molekularbiologische und histologische Untersuchung nicht
+              durchgeführt
+LZ
+5T A16.2    Lungentuberkulose ohne Angabe einer bakteriologischen,
+            molekularbiologischen oder histologischen Sicherung
+5I          Lungentuberkulose   } o.n.A. (ohne Angabe einer bakteriologischen,
+5I          Tuberkulös:         }   molekularbiologischen oder histologischen
+5I          . Bronchiektasie    }   Sicherung)
+5I          . Fibrose der Lunge }
+5I          . Pneumonie         }
+5I          . Pneumothorax      }
+LZ
+5T A16.3    Tuberkulose der intrathorakalen Lymphknoten ohne Angabe einer
+            bakteriologischen, molekularbiologischen oder histologischen
+            Sicherung
+5I          Lymphknotentuberkulose: } o.n.A. (ohne Angabe einer
+5I          . hilär                 }   bakteriologischen,
+5I          . intrathorakal         }   molekularbiologischen oder
+5I          . mediastinal           }   histologischen Sicherung)
+5I          . tracheobronchial      }
+5E          Exkl.:   Als primär bezeichnet (A16.7)
+LZ
+5T A16.4    Tuberkulose des Larynx, der Trachea und der Bronchien ohne Angabe
+            einer bakteriologischen, molekularbiologischen oder histologischen
+            Sicherung
+5I          Tuberkulose: } o.n.A. (ohne Angabe einer bakteriologischen,
+5I          . Bronchien  }   molekularbiologischen oder histologischen
+5I          . Glottis    }   Sicherung)
+5I          . Larynx     }
+5I          . Trachea    }
+LZ
+5T A16.5    Tuberkulöse Pleuritis ohne Angabe einer bakteriologischen,
+            molekularbiologischen oder histologischen Sicherung
+5I          Tuberkulös:            } o.n.A. (ohne Angabe einer
+5I          . Empyem               }   bakteriologischen, molekularbiologischen
+5I          . Pleuritis            }   oder histologischen Sicherung)
+5I          Tuberkulose der Pleura }
+5E          Exkl.:   Bei primärer Tuberkulose der Atmungsorgane (A16.7)
+LZ
+5T A16.7    Primäre Tuberkulose der Atmungsorgane ohne Angabe einer
+            bakteriologischen, molekularbiologischen oder histologischen
+            Sicherung
+5I          Primäre(r):
+5I          . Tuberkulose der Atmungsorgane o.n.A.
+5I          . tuberkulöser Komplex
+LZ
+5T A16.8    Sonstige Tuberkulose der Atmungsorgane ohne Angabe einer
+            bakteriologischen, molekularbiologischen oder histologischen
+            Sicherung
+5I          Tuberkulose:             } o.n.A. (ohne Angabe einer
+5I          . Mediastinum            }   bakteriologischen,
+5I          . Nase                   }   molekularbiologischen oder
+5I          . Nasennebenhöhle [jede] }   histologischen Sicherung)
+5I          . Nasopharynx            }
+LZ
+5T A16.9    Nicht näher bezeichnete Tuberkulose der Atmungsorgane ohne Angabe
+            einer bakteriologischen, molekularbiologischen oder histologischen
+            Sicherung
+5I          Tuberkulose o.n.A.
+5I          Tuberkulose der Atmungsorgane o.n.A.
+LZ
+4T A17.-†   Tuberkulose des Nervensystems
+LZ
+5T A17.0†   Tuberkulöse Meningitis (G01*)
+5I          Tuberkulöse Leptomeningitis
+5I          Tuberkulose der Meningen (zerebral) (spinal)
+LZ
+5T A17.1†   Meningeales Tuberkulom (G07*)
+5I          Tuberkulom der Meningen
+LZ
+5T A17.8†   Sonstige Tuberkulose des Nervensystems
+5I          Tuberkulös:
+5I          . Hirnabszess (G07*)
+5I          . Meningoenzephalitis (G05.0*)
+5I          . Myelitis (G05.0*)
+5I          . Polyneuropathie (G63.0*)
+5I          Tuberkulom  } in { Gehirn (G07*)
+5I          Tuberkulose }    { Rückenmark (G07*)
+LZ
+5T A17.9†   Tuberkulose des Nervensystems, nicht näher bezeichnet (G99.8*)
+LZ
+4T A18.-    Tuberkulose sonstiger Organe
+LZ
+5T A18.0†   Tuberkulose der Knochen und Gelenke
+5I          Tuberkulös:
+5I          . Arthritis (M01.1-*)
+5I          . Knochennekrose (M90.0-*)
+5I          . Mastoiditis (H75.0*)
+5I          . Osteomyelitis (M90.0-*)
+5I          . Ostitis (M90.0-*)
+5I          . Synovitis (M68.0-*)
+5I          . Tenosynovitis (M68.0-*)
+5I          Tuberkulose:
+5I          . Hüfte (M01.15*)
+5I          . Knie (M01.16*)
+5I          . Wirbelsäule (M49.0-*)
+LZ
+5T A18.1    Tuberkulose des Urogenitalsystems
+5I          Tuberkulose:
+5I          . Cervix uteri† (N74.0*)
+5I          . Harnblase† (N33.0*)
+5I          . männliche Genitalorgane† (N51.-*)
+5I          . Niere† (N29.1*)
+5I          . Ureter† (N29.1*)
+5I          Tuberkulose im weiblichen Becken† (N74.1*)
+LZ
+5T A18.2    Tuberkulose peripherer Lymphknoten
+5I          Tuberkulöse Lymphadenitis
+5E          Exkl.:   Tuberkulöse tracheobronchiale Adenopathie (A15.4, A16.3)
+5E                   Tuberkulose der Lymphknoten:
+5E                   . intrathorakal (A15.4, A16.3)
+5E                   . mesenterial und retroperitoneal (A18.3)
+LZ
+5T A18.3    Tuberkulose des Darmes, des Peritoneums und der
+            Mesenteriallymphknoten
+5I          Tuberkulös:
+5I          . Aszites
+5I          . Enteritis† (K93.0*)
+5I          . Peritonitis† (K67.3*)
+5I          Tuberkulose:
+5I          . Anus und Rektum† (K93.0*)
+5I          . Darm (Dickdarm) (Dünndarm)† (K93.0*)
+5I          . retroperitoneal (Lymphknoten)
+LZ
+5T A18.4    Tuberkulose der Haut und des Unterhautgewebes
+5I          Lupus:
+5I          . exedens
+5I          . vulgaris:
+5I            . des Augenlides† (H03.1*)
+5I            . o.n.A.
+5I          Skrofuloderm
+5I          Tuberculosis cutis indurativa [Erythema induratum, tuberkulös]
+5E          Exkl.:   Lupus erythematodes (L93.-)
+5E                   Systemischer Lupus erythematodes (M32.-)
+LZ
+5T A18.5    Tuberkulose des Auges
+5I          Tuberkulöse:
+5I          . Chorioretinitis† (H32.0*)
+5I          . Episkleritis† (H19.0*)
+5I          . interstitielle Keratitis† (H19.2*)
+5I          . Iridozyklitis† (H22.0*)
+5I          . Keratokonjunktivitis (interstitiell) (phlyktänulär)† (H19.2*)
+5E          Exkl.:   Lupus vulgaris des Augenlides (A18.4)
+LZ
+5T A18.6    Tuberkulose des Ohres
+5I          Tuberkulöse Otitis media† (H67.0*)
+5E          Exkl.:   Tuberkulöse Mastoiditis (A18.0†)
+LZ
+5T A18.7†   Tuberkulose der Nebennieren (E35.1*)
+5I          Addison-Krankheit, tuberkulös
+LZ
+5T A18.8    Tuberkulose sonstiger näher bezeichneter Organe
+5I          Tuberkulöse zerebrale Arteriitis† (I68.1*)
+5I          Tuberkulose:
+5I          . Endokard† (I39.8*)
+5I          . Myokard† (I41.0*)
+5I          . Ösophagus† (K23.0*)
+5I          . Perikard† (I32.0*)
+5I          . Schilddrüse† (E35.0*)
+LZ
+4T A19.-    Miliartuberkulose
+4I          Inkl.:   Tuberkulöse Polyserositis
+4I                   Tuberkulose:
+4I                   . disseminiert
+4I                   . generalisiert
+LZ
+5T A19.0    Akute Miliartuberkulose einer einzelnen näher bezeichneten
+            Lokalisation
+LZ
+5T A19.1    Akute Miliartuberkulose mehrerer Lokalisationen
+LZ
+5T A19.2    Akute Miliartuberkulose, nicht näher bezeichnet
+LZ
+5T A19.8    Sonstige Miliartuberkulose
+LZ
+5T A19.9    Miliartuberkulose, nicht näher bezeichnet
+LZ
+1T Bestimmte bakterielle Zoonosen
+1T (A20-A28)
+LZ
+4T A20.-    Pest
+4I          Inkl.:   Infektion durch Yersinia pestis
+LZ
+5T A20.0    Bubonenpest
+LZ
+5T A20.1    Hautpest
+LZ
+5T A20.2    Lungenpest
+LZ
+5T A20.3    Pestmeningitis
+LZ
+5T A20.7    Pestsepsis
+LZ
+5T A20.8    Sonstige Formen der Pest
+5I          Abortive Pest
+5I          Asymptomatische Pest
+5I          Pestis minor
+LZ
+5T A20.9    Pest, nicht näher bezeichnet
+LZ
+4T A21.-    Tularämie
+4I          Inkl.:   Hasenpest
+4I                   Hirschfliegenfieber
+4I                   Infektion durch Francisella tularensis
+LZ
+5T A21.0    Ulzeroglanduläre Tularämie
+LZ
+5T A21.1    Okuloglanduläre Tularämie
+LZ
+5T A21.2    Pulmonale Tularämie
+LZ
+5T A21.3    Gastrointestinale Tularämie
+5I          Abdominale Tularämie
+LZ
+5T A21.7    Generalisierte Tularämie
+LZ
+5T A21.8    Sonstige Formen der Tularämie
+LZ
+5T A21.9    Tularämie, nicht näher bezeichnet
+LZ
+4T A22.-    Anthrax [Milzbrand]
+4I          Inkl.:   Infektion durch Bacillus anthracis
+LZ
+5T A22.0    Hautmilzbrand
+5I          Milzbrandkarbunkel
+5I          Pustula maligna
+LZ
+5T A22.1    Lungenmilzbrand
+5I          Hadernkrankheit
+5I          Milzbrand, durch Inhalation erworben
+LZ
+5T A22.2    Darmmilzbrand
+LZ
+5T A22.7    Milzbrandsepsis
+LZ
+5T A22.8    Sonstige Formen des Milzbrandes
+5I          Milzbrandmeningitis† (G01*)
+LZ
+5T A22.9    Milzbrand, nicht näher bezeichnet
+LZ
+4T A23.-    Brucellose
+4I          Inkl.:   Maltafieber
+4I                   Mittelmeerfieber
+4I                   Undulierendes Fieber
+LZ
+5T A23.0    Brucellose durch Brucella melitensis

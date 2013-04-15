@@ -1,0 +1,27 @@
+additional_info = Zusatz Informationen
+age_group = Alters Gruppe
+gender = Geschlecht
+
+symptom_list =Ausgewälte Symptome
+medicamen_list = Ausgewälte Medikamente
+query_nr = Abfragenummer
+male = Männlich
+female = Weiblich
+
+## Buttons
+add_data = Daten hinzufügen
+add_info = Info anbinden
+add_next_data = Weitere Daten hinzufügen
+drop_data = Daten löschen und neuangeben
+overview = Zur Übersicht
+send_data = Daten Senden
+start_analyse =Analyse Starten
+delete_med = Medikament löschen
+delete_symptom = Symptom löschen
+
+## Errors
+error-no_data_send = Sie haben keine Kriterien eingegeben!<br /> Sie werden wieder auf die Formular Seite <strong>umgeleitet</strong>!
+
+## Info Texts
+main_label = Geben Sie hier Ihre <strong>Symptome</strong> und <strong>eingenommene Medikamente</strong> ein.
+main_label_info = Name des Medikaments oder Symptoms eingeben und aus der Liste wählen.
