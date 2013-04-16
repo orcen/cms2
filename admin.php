@@ -122,8 +122,7 @@ ob_end_clean();
  *  Content Processing End
  ****************************************************/
 
-$styleLinks = '<link href="'.$_sC->_get('domain').'templates/css/admin.css" rel="stylesheet" type="text/css" media="screen" />'."\n"
-	. '<link  href="http://fonts.googleapis.com/css?family=MedievalSharp:regular" rel="stylesheet" type="text/css" >';
+$styleLinks = '<link href="'.$_sC->_get('domain').'templates/css/admin.css" rel="stylesheet" type="text/css" media="screen" />';
 
 $markers = array(
  "###TITLE###" => $_sC->_get('system_title'),
@@ -133,13 +132,13 @@ $markers = array(
  "###CONTENT###" => $content,
  "###BORDER_CONTENT###" => $border_content,
  "###CSSSTYLES###" => $styleLinks,
- '###JSFILE1###' => $_sC->_get('domain').'javascript/jquery.js',
- '###JSFILE2###' => $_sC->_get('domain').'javascript/jquery-handler.js',
+ '###JSFILE1###' => 'http://code.jquery.com/jquery-1.9.1.js',
+ '###JSFILE2###' => 'http://code.jquery.com/ui/1.10.2/jquery-ui.js',
  '###USERNAVIGATION###' => null
 );
 
 if( $user->isLoaded() ) {
-  $markers['###USERNAVIGATION###'] = '<div class="user_nav"> <a href="#" title="{L:user:last_login} '. date($_sC->_get('datetime_format'),$user->_get('last_login')).'">' . $user->_get('name') . ' ' . $user->_get('surname') . '</a>'
+  $markers['###USERNAVIGATION###'] = '<div class="user_nav"> <a href="'.$_sC->_get('domain').'" target="_blank">Frontend</a> <a href="#" title="{L:user:last_login} '. date($_sC->_get('datetime_format'),$user->_get('last_login')).'">' . $user->_get('name') . ' ' . $user->_get('surname') . '</a>'
     . ' <a href="?logout=1">{L:system:logout}</a> </div>';
 }
 
@@ -155,8 +154,6 @@ print( $html_output );
 $db->close();
 
 
-
-
 function processCSV($fullFilename, $firstLine=1){
   global $rowCnt, $db;
 
@@ -164,8 +161,7 @@ function processCSV($fullFilename, $firstLine=1){
 
   $linNr = 0;
 
-  while( ( $data = fgetcsv($f, 4096, ",", '"') ) !== false){
-
+  while( ( $data = fgetcsv($f, 4096, ",", '"') ) !== false) {
     if( $linNr < $firstLine){
       $linNr++;
       continue;
@@ -173,11 +169,11 @@ function processCSV($fullFilename, $firstLine=1){
 
     list($titel,$syn, $brand) = $data;
 
-    $synAr = explode(";",$syn);
-    $brandAr = explode(";",$brand);
+    $synAr    = explode( ';', $syn);
+    $brandAr  = explode( ';', $brand);
 
-    $synC=count($synAr);
-    $brandC=count($brandAr);
+    $synC = count($synAr);
+    $brandC = count($brandAr);
     $rowspan = 0;
     if( $synC > $brandC ){
       $rowspan = $synC;
@@ -185,17 +181,15 @@ function processCSV($fullFilename, $firstLine=1){
       $rowspan = $brandC;
     }
 
-    for($i=0;$i<$rowspan;$i++)
-    {
-      if(FALSE === $db->select_row('brand','brands','brand="'.$brandAr[$i].'" OR synonym="'.$synAr[$i].'"') )
-      {
-      $row = array();
+    for($i=0; $i<$rowspan; $i++) {
+      if( FALSE === $db->select_row('brand','brands','brand="'.$brandAr[$i].'" OR synonym="'.$synAr[$i].'"') ) {
+        $row = array(
+          'name'    =>  $titel,
+          'synonym' =>  (isset($synAr[$i])?$synAr[$i]:null),
+          'brand'   =>  (isset($brandAr[$i])?$brandAr[$i]:null)
+        );
 
-      $row['name'] = $titel;
-      $row['synonym'] = (isset($synAr[$i])?$synAr[$i]:null);
-      $row['brand'] =  (isset($brandAr[$i])?$brandAr[$i]:null);
-
-      if( false == $db->insert($row,'brands') )
+        if( false == $db->insert($row,'brands') )
           break;
       }
     }
@@ -204,31 +198,28 @@ function processCSV($fullFilename, $firstLine=1){
 }
 
 
-function processDIMDI($fullFilename){
+function processDIMDI($fullFilename) {
   global $rowCnt, $db;
 
-  require('./helpers/dimdi.helper.php');
+  require('./helpers/dimdi.helper.php'); // dimdi class file
 
-  $f = fopen($fullFilename,'r');
+  $f = fopen($fullFilename,'r'); // open file handler
 
-  $linNr = 0;
+  $dimdi = new dimdi(); // new dimdi object
 
-  $dimdi = new dimdi();
-
-  while (($data = fgets($f, 4096)) !== false ) {
-    $dimdi->addItem($data);
-    $linNr++;
+  $linNr = 0; // line count
+  while (($data = fgets($f, 4096)) !== false ) { // read file by lines
+    $dimdi->addItem($data); // add data
+    $linNr++; // increase line count
   }
-
+  // close file handler
   fclose($f);
-
-   //echo nl2br(str_replace("  ","&nbsp;",print_r($dimdi->result,true)));
 
   // Chapter
   // chapter will not be saved in db yet
-  for( $k=1; $k<count($dimdi->result); $k++){
+  for( $k=1; $k<count($dimdi->result); $k++) {
     // for every group in kapitel
-    foreach($dimdi->result[$k]['groups'] as $group_nr=>$group){
+    foreach($dimdi->result[$k]['groups'] as $group_nr=>$group) {
       //group data
       $grRow = array(
         'pid'         => $k,
@@ -236,11 +227,11 @@ function processDIMDI($fullFilename){
         'group_name'  => $group['name']
       );
       // save group to DB
-      if( $db->insert($grRow,'ICD10-groups') ){
+      if( $db->insert($grRow,'ICD10-groups') ) {
         // group id
         $groupId = $db->last_ID;
         // every item in group
-        foreach($group['items'] as $item_nr=>$item){
+        foreach($group['items'] as $item_nr=>$item) {
           // define item data
           $itRow = array(
             'pid'       => $groupId,
@@ -248,35 +239,31 @@ function processDIMDI($fullFilename){
             'item_name' => $item['text']
           );
           // save item in DB
-          if( $db->insert($itRow,'ICD10-items') ){
+          if( $db->insert($itRow,'ICD10-items') ) {
             // item id
             $itId = $db->last_ID;
             // Including Info for Item
-            if( isset($item['inc']) ){
+            if( isset($item['inc']) ) {
               // save every single info
-              for($i=0; $i<count($item['inc']); $i++ ){
+              for($i=0; $i<count($item['inc']); $i++ ) {
                 if( false == $db->insert(array('pid'=>$itId,'typ'=>'I','text'=>$item['inc'][$i]),'ICD10-item_details') ) {
                   echo $db->error;
                 }
               }
             }
             // Excluding Info for Item
-            if( isset($item['exc']) ){
+            if( isset($item['exc']) ) {
             // save every single info
-              for($e=0; $e<count($item['inc']); $e++ ){
+              for($e=0; $e<count($item['inc']); $e++ ) {
                 if( false == $db->insert(array('pid'=>$itId,'typ'=>'E','text'=>$item['exc'][$e]),'ICD10-item_details') ) {
                   echo $db->error;
-                }
-              }
-            }
-
-          }
-        }
-      }
-    }
-  }
-
-}
-
-
+                } // $db->insert( detail )
+              } // for( info )
+            } // exlude
+          } // $db->insert(item)
+        } // foreach group
+      } // $db->insert(group)
+    } // foreach group
+  } // for (chapter)
+} //function
 ?>

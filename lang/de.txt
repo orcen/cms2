@@ -35,3 +35,7 @@ mime_type = MIME
 file_open = Öffnen
 file_edit = Bearbeiten
 file_remove = Löschen
+
+## Forms
+save = Speichern
+reset = Reset

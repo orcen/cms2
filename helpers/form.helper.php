@@ -439,13 +439,11 @@ class form {
     unset($params["label"], $params["value"], $params["selected"], $params["type"],
       $params['description']);
 
-    $field_result = '<select'.$multiple;
-
-    $field_result .= $this->create_params($params);
-    $field_result .= ">\n";
-    $field_result .= $this->make_select_options($values, $selected, (isset($params["opt_group"]) ?
-      $params["opt_group"] : null));
-    $field_result .= "</select>\n";
+    $field_result = '<select'.$multiple
+      . $this->create_params($params)
+      . '>' . PHP_EOL
+      . $this->make_select_options($values, $selected, (isset($params["opt_group"]) ? $params["opt_group"] : null))
+      . '</select>'.PHP_EOL;
     if (!empty($description))
       $field_result .= create_description($description);
     return $field_result;
@@ -458,20 +456,29 @@ class form {
   /*
   /*
   /*********************************************/
-  private function make_select_options($data, $selected)
-    //creates a select field, with the right options
-  {
-    //unset($options_result);
+  private function make_select_options($data, $selected) {  //creates a select field, with the right options
+
     (string )$options_result = "";
+    if( trim($data) != '' ) {
+      if (is_array($data)) {
+        foreach ($data as $value => $name) {
+          if (is_array($name) and isset($name["group"])) {
+            $group = $name;
+            $options_result .= "<optgroup label=\"{$name["group"]}\">";
 
-    if (is_array($data)) {
-      foreach ($data as $value => $name) {
-        if (is_array($name) and isset($name["group"])) {
-          $group = $name;
-          $options_result .= "<optgroup label=\"{$name["group"]}\">";
+            foreach ($group["value"] as $value => $name) {
 
-          foreach ($group["value"] as $value => $name) {
+              if (is_array($selected))
+                $select = (in_array($value, $selected) == true || in_array($name, $selected) == true) ?
+                  ' selected="selected"' : null;
+              else
+                $select = ($selected == $value or $selected == $name) ? ' selected="selected"' : null;
 
+              $name = htmlentities($name, ENT_QUOTES, 'UTF-8');
+              $options_result .= "<option value='$value'$select>$name</option>\n";
+            }
+            $options_result .= "</optgroup>";
+          } else {
             if (is_array($selected))
               $select = (in_array($value, $selected) == true || in_array($name, $selected) == true) ?
                 ' selected="selected"' : null;
@@ -481,38 +488,28 @@ class form {
             $name = htmlentities($name, ENT_QUOTES, 'UTF-8');
             $options_result .= "<option value='$value'$select>$name</option>\n";
           }
-          $options_result .= "</optgroup>";
-        } else {
-          if (is_array($selected))
-            $select = (in_array($value, $selected) == true || in_array($name, $selected) == true) ?
-              ' selected="selected"' : null;
-          else
-            $select = ($selected == $value or $selected == $name) ? ' selected="selected"' : null;
-
-          $name = htmlentities($name, ENT_QUOTES, 'UTF-8');
-          $options_result .= "<option value='$value'$select>$name</option>\n";
         }
+      } else {
+
+        $options = explode(":", $data);
+        foreach ($options as $item) {
+          $name = trim($item);
+          if (strpos("||", $name))
+            list($value) = explode("||", $name);
+          else
+            $value = $name;
+
+          if (is_array($selected))
+            (in_array($name, $selected) == true) ? $select = " selected='selected'" : $select =
+              "";
+          else
+            ($selected == $name) ? $select = " selected='selected'" : $select = "";
+
+          $value = trim($value);
+          $options_result .= "<option$select value=\"$value\">$name</option>\n";
+        }
+
       }
-    } else {
-
-      $options = explode(":", $data);
-      foreach ($options as $item) {
-        $name = trim($item);
-        if (strpos("||", $name))
-          list($value) = explode("||", $name);
-        else
-          $value = $name;
-
-        if (is_array($selected))
-          (in_array($name, $selected) == true) ? $select = " selected='selected'" : $select =
-            "";
-        else
-          ($selected == $name) ? $select = " selected='selected'" : $select = "";
-
-        $value = trim($value);
-        $options_result .= "<option$select value=\"$value\">$name</option>\n";
-      }
-
     }
     return $options_result;
   }

@@ -1,3 +1,6 @@
 datagroups = Datengruppen
 datagroups_description = Datengruppen die von anderem Modulen genutzt werden.
-new_group = Neue Gruppe
+new_datagroup = Neue Datengruppe
+groupname = Gruppenname
+group_description = Beschreibung
+group_items = Gruppenelemente

@@ -73,7 +73,7 @@ small {
 #content {
   float:left;
 	max-width: 100%;
-
+  min-width:600px;
 	min-height: 400px;
 	background: url(./img/bg_content.jpg) no-repeat 1300px 250px;
   background-attachment: fixed;
@@ -187,6 +187,9 @@ table.list.file tbody td:nth-child(5){
   text-align:right;
   width:85px;
 }
+table#datagroups{ width:600px; margin:15px 0;}
+table#datagroups td:first-child{width:20px; text-align:center;}
+table#datagroups td:last-child{width:80px;}
 
 a.button {
 	display: inline-block;
@@ -228,6 +231,23 @@ span.sprite.jpg,
 span.sprite.jpeg{ background-position:-100px 0px; }
 span.sprite.gif{ background-position:-120px 0px; }
 
+#searchList {
+	display: inline-block;
+	width: 550px;
+	min-height: 50px;
+	padding: 0px;
+	vertical-align: middle;
+}
+#searchList li {
+	border: 1px solid #DDD;
+	background-color: #F2940C;
+	padding: 1px 5px;
+	margin: 2px 0px;
+	font-size: 9pt;
+	display: block;
+}
+#searchList li .remove{ float:right; color:#FFF; cursor:pointer; border:none; padding:0; display:inline-block; width:18px; height:18px; background-color:#F00;}
+
 .ui-autocomplete {
 	max-width: 100%;
 	max-height: 300px;
@@ -240,19 +260,25 @@ span.sprite.gif{ background-position:-120px 0px; }
 	height: 100px;
 }
 .ui-helper-hidden-accessible {
-	display: none;
+  display:none;
 	position: absolute;
 	top: 0px;
 	font-size: 8pt;
 }
 #ui-id-1 {
+  list-style:inside none;
 	border: 1px solid #AAA;
 	width: 500px;
+  background-color:#FFF;
 }
 #ui-id-1 .ui-menu-item {
 	border-bottom: 1px solid #DDD;
 	font-size: 10pt;
 	background-color: #FFF;
+}
+#ui-id-1 .ui-menu-item:hover{
+  background-color: #F2940C;
+  color:#fff;
 }
 .ui-autocomplete-category {
 	text-align: center;
